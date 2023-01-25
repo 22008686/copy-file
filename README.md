@@ -35,8 +35,8 @@ with open('lines.txt','r') as file1:
 ```
 ### OUTPUT:
 
-![](./copy1.png)
-![](./copy2.png)
+![](./do1.png)
+![](./d02.png)
 
 ## RESULT:
 Thus the program is written to copy the contents from one file to another file.

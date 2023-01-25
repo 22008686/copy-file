@@ -1,6 +1,7 @@
-##Developed by:M.PAVITHRA
-##Reference number:22008686
-#with open('lines.txt','r') as file1:
-    with open('text.txt','w') as file2:
-        for line in file1:
-            file2.write(line)
+import sys
+count=0
+with open(sys.argv[1],'r') as f:
+    for line in f:
+        word = line.split()
+        count += len(word)
+print("word count in file = ",count)
