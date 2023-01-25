@@ -11,27 +11,39 @@ Anaconda - Python 3.7
 
 ## ALGORITHM: 
 
-Step 1:Create two txt file.A file which has content [lines.txt] to be copied to the empty [text.txt]file.
+Step 1:Get the file name and location from the user.
 
-Step 2: Using write() function to copy the content from line.txt to empty file,text.txt.
- 
-Step 3: Save and run the python program in terminal.
+Step 2:Give a new file name to create a copy of a file content.
 
-step 4: The text from the lines.txt file is copied to the empty file text.txt.
+Step 3:Read the file and close the file.
 
-Step 5: Then the text is shown in empty file text.txt.
+Step 4:Now write the content in the new file.
 
-Step 6: Result is obtained.
+Step 5:When done print "File copied successfully".
+
+Step 6:End of the program.
 
 ## PROGRAM:
 ```
 
 ## Developed by:M.PAVITHRA
 ## Reference number:22008686
-with open('lines.txt','r') as file1:
-    with open('text.txt','w') as file2:
-        for line in file1:
-            file2.write(line)
+
+print("Enter the Name of Source File: ")
+sFile = input()
+print("Enter the Name of Target File: ")
+tFile = input()
+
+fileHandle = open(sFile, "r")
+texts = fileHandle.readlines()
+fileHandle.close()
+
+fileHandle = open(tFile, "w")
+for s in texts:
+    fileHandle.write(s)
+fileHandle.close()
+
+print("\nFile Copied Successfully!")
 ```
 ### OUTPUT:
 
