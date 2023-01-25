@@ -24,13 +24,15 @@ Step 5: Then the text is shown in empty file text.txt.
 Step 6: Result is obtained.
 
 ## PROGRAM:
+```
+
 ## Developed by:M.PAVITHRA
 ## Reference number:22008686
 with open('lines.txt','r') as file1:
     with open('text.txt','w') as file2:
         for line in file1:
             file2.write(line)
-
+```
 ### OUTPUT:
 
 ![](./copy1.png)
